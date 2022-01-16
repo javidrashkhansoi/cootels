@@ -862,6 +862,8 @@ body.open {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .rooms__subtitle {
@@ -903,10 +905,19 @@ body.open {
   color: #424f7b;
 }
 
+.rooms__link:hover span {
+  padding: 0 10px 0 calc(13.67px / 2);
+}
+
 .rooms__link span,
 .rooms__link img {
   padding: 0 calc(13.67px / 2);
   display: inline-block;
+}
+
+.rooms__link span {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .rooms__link img {
