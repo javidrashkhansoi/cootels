@@ -599,4 +599,155 @@ body.open {
     margin: 0 0 24px;
   }
 }
+
+.cabin {
+  padding: 80px 0;
+}
+
+@media (max-width: 992px) {
+  .cabin {
+    padding: 40px 0;
+  }
+}
+
+.cabin__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -63px 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  .cabin__row {
+    margin: 0 -30px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cabin__row {
+    margin: 0 -15px 32px;
+  }
+}
+
+@media (max-width: 550px) {
+  .cabin__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 32px;
+  }
+}
+
+.cabin__row:last-child {
+  margin: 0 -63px;
+}
+
+@media (max-width: 992px) {
+  .cabin__row:last-child {
+    margin: 0 -30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cabin__row:last-child {
+    margin: 0 -15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .cabin__row:last-child {
+    margin: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .cabin__row:last-child .cabin__column_body {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 550px) {
+  .cabin__row:last-child .cabin__column_image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.cabin__column {
+  padding: 0 63px;
+}
+
+@media (max-width: 992px) {
+  .cabin__column {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cabin__column {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cabin__column {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 550px) {
+  .cabin__column {
+    padding: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .cabin__column_body {
+    margin: 0 0 24px;
+  }
+}
+
+.cabin__column_image {
+  -ms-flex-preferred-size: 66.03%;
+      flex-basis: 66.03%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media (max-width: 550px) {
+  .cabin__column_image {
+    width: 100%;
+  }
+}
+
+.cabin__title {
+  margin: 0 0 24px;
+}
+
+.cabin__text {
+  max-width: 1000px;
+}
+
+.cabin__image {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 100%;
+}
+
+.cabin__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */
