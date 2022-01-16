@@ -149,6 +149,10 @@ body.open {
   color: #192252;
 }
 
+.title_mini {
+  font-size: calc(20px + 16 * ((100vw - 320px) / 880));
+}
+
 .text {
   font-family: Inter;
   font-size: calc(14px + 4 * ((100vw - 320px) / 880));
@@ -420,6 +424,7 @@ body.open {
 
 .nature__text {
   margin: 0 0 32px;
+  max-width: 515px;
 }
 
 @media (max-width: 992px) {
@@ -461,5 +466,137 @@ body.open {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.cozy {
+  padding: 80px 0;
+}
+
+@media (max-width: 992px) {
+  .cozy {
+    padding: 40px 0;
+  }
+}
+
+.cozy__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -63px;
+}
+
+@media (max-width: 992px) {
+  .cozy__row {
+    margin: 0 -30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cozy__row {
+    margin: 0 -15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cozy__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+}
+
+.cozy__column {
+  padding: 0 63px;
+}
+
+@media (max-width: 992px) {
+  .cozy__column {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cozy__column {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cozy__column {
+    padding: 0;
+  }
+}
+
+.cozy__column_image {
+  -ms-flex-preferred-size: 67.905%;
+      flex-basis: 67.905%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media (max-width: 500px) {
+  .cozy__column_image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .cozy__column_body {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.cozy__image {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 150%;
+}
+
+.cozy__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cozy__title {
+  margin: 0 0 24px;
+}
+
+.cozy__text {
+  margin: 0 0 32px;
+  max-width: 615px;
+}
+
+@media (max-width: 992px) {
+  .cozy__text {
+    margin: 0 0 24px;
+  }
+}
+
+.cozy__text p {
+  margin: 0 0 16px;
+}
+
+.cozy__text p:last-child {
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  .cozy__button {
+    margin: 0 0 24px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
