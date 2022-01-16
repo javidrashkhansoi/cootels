@@ -6,3 +6,10 @@ burger.addEventListener("click", () => {
 	navigation.classList.toggle("open");
 	body.classList.toggle("open");
 });
+window.addEventListener("resize", () => {
+	if (window.innerWidth > 768) {
+		burger.classList.remove("open");
+		navigation.classList.remove("open");
+		body.classList.remove("open");
+	}
+})
