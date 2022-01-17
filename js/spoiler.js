@@ -1,11 +1,9 @@
 const spoilers = document.querySelectorAll(".spoiler");
-const width = window.innerWidth;
 if (spoilers.length > 0) {
 	spoilers.forEach(spoiler => {
 		const spoilerItem = spoiler.querySelectorAll(".spoiler__item");
 		if (spoilerItem.length > 0) {
 			spoilerItem.forEach(item => {
-				const spoilerTitle = item.querySelector(".spoiler__title");
 				const spoilerText = item.querySelector(".spoiler__text");
 				item.addEventListener("click", () => {
 					const height = spoilerText.scrollHeight;
@@ -22,10 +20,16 @@ if (spoilers.length > 0) {
 					}
 				});
 				spoilerText.addEventListener("DOMSubtreeModified", () => {
-					spoilerItem.forEach(si => {
-						si.classList.remove("active");
-						si.querySelector(".spoiler__text").style.maxHeight = "0";
-					});
+					const height = spoilerText.scrollHeight;
+					if (item.classList.contains("active")) {
+						spoilerText.style.maxHeight = height + "px";
+					}
+				});
+				window.addEventListener("resize", () => {
+					const height = spoilerText.scrollHeight;
+					if (item.classList.contains("active")) {
+						spoilerText.style.maxHeight = height + "px";
+					}
 				});
 				window.addEventListener("orientationchange", () => {
 					spoilerItem.forEach(si => {
