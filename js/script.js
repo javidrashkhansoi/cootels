@@ -12,4 +12,4 @@ window.addEventListener("resize", () => {
 		navigation.classList.remove("open");
 		body.classList.remove("open");
 	}
-})
+});

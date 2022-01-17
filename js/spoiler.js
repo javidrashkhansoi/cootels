@@ -1,4 +1,5 @@
 const spoilers = document.querySelectorAll(".spoiler");
+const width = window.innerWidth;
 if (spoilers.length > 0) {
 	spoilers.forEach(spoiler => {
 		const spoilerItem = spoiler.querySelectorAll(".spoiler__item");
@@ -21,12 +22,6 @@ if (spoilers.length > 0) {
 					}
 				});
 				spoilerText.addEventListener("DOMSubtreeModified", () => {
-					spoilerItem.forEach(si => {
-						si.classList.remove("active");
-						si.querySelector(".spoiler__text").style.maxHeight = "0";
-					});
-				});
-				window.addEventListener("resize", () => {
 					spoilerItem.forEach(si => {
 						si.classList.remove("active");
 						si.querySelector(".spoiler__text").style.maxHeight = "0";
