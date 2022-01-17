@@ -19,6 +19,18 @@ if (spoilers.length > 0) {
 						spoilerText.style.maxHeight = height + "px";
 					}
 				});
+				spoilerText.addEventListener("DOMSubtreeModified", () => {
+					spoilerItem.forEach(si => {
+						si.classList.remove("active");
+						si.querySelector(".spoiler__text").style.maxHeight = "0";
+					});
+				});
+				window.addEventListener("resize", () => {
+					spoilerItem.forEach(si => {
+						si.classList.remove("active");
+						si.querySelector(".spoiler__text").style.maxHeight = "0";
+					});
+				});
 				document.addEventListener("click", (event) => {
 					if (!event.target.closest(".spoiler")) {
 						spoilerItem.forEach(si => {
