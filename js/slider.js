@@ -1,0 +1,41 @@
+$(document).ready(function () {
+	$(".slider").slick({
+		arrows: false,
+		dots: true,
+		adaptiveHeight: true,
+		// slidesToShow: 1,
+		// slidesToScroll: 1,
+		// speed: 1000,
+		// easing: "ease",
+		infinite: true,
+		// initialSlide: 0,
+		// autoplay: false,
+		// autoplaySpeed: 500,
+		// pauseOnFocus: true,
+		// pauseOnHover: true,
+		// pauseOnDotsHover: true,
+		// draggable: true,
+		// swipe: true,
+		// touchTreshold: 5,
+		// touchMove: true,
+		// waitForAnimate: true,
+		// centerMode: false,
+		// variableWidth: false,
+		// rows: 1,
+		// slidersPerRow: 1,
+		// vertical: false,
+		// verticalSwiping: false,
+		// asNavFor: ".sliderbig",
+		// responsive: [
+		// 	{
+		// 		breakpoint: 992,
+		// 		settings: {
+		// 			slidesToShow: 2,
+		// 		},
+		// 	},
+		// ],
+		// mobileFirst: false,
+		// appendArrows: $(".class"),
+		// appendDots: $(".class"),
+	});
+});
