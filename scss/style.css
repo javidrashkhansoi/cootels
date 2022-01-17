@@ -1107,6 +1107,7 @@ body.open {
   -webkit-box-shadow: 0 0 15px #aaa;
           box-shadow: 0 0 15px #aaa;
   margin: 0 0 24px;
+  cursor: pointer;
 }
 
 @media (max-width: 500px) {
@@ -1149,7 +1150,6 @@ body.open {
           align-items: center;
   -webkit-transition: 0.25s;
   transition: 0.25s;
-  cursor: pointer;
 }
 
 .spoiler__title span {
