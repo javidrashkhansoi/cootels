@@ -133,11 +133,11 @@ body.open {
   border-radius: 4px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
-  outline: 3px solid #ffffff;
 }
 
 .button__link:hover {
-  outline: 3px solid #0e1734;
+  -webkit-box-shadow: 0 0 0 3px #0e1734;
+          box-shadow: 0 0 0 3px #0e1734;
   background: #ffffff;
   color: #0e1734;
 }
