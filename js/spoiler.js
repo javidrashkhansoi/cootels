@@ -4,8 +4,9 @@ if (spoilers.length > 0) {
 		const spoilerItem = spoiler.querySelectorAll(".spoiler__item");
 		if (spoilerItem.length > 0) {
 			spoilerItem.forEach(item => {
-				const spoilerText = item.querySelector(".spoiler__text")
-				item.addEventListener("click", () => {
+				const spoilerTitle = item.querySelector(".spoiler__title");
+				const spoilerText = item.querySelector(".spoiler__text");
+				spoilerTitle.addEventListener("click", () => {
 					const height = spoilerText.scrollHeight;
 					if (item.classList.contains("active")) {
 						item.classList.remove("active");
