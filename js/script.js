@@ -21,4 +21,5 @@ function headerHeight() {
 		header.classList.remove("scroll");
 	}
 }
+headerHeight();
 window.addEventListener("scroll", headerHeight);
