@@ -13,3 +13,12 @@ window.addEventListener("resize", () => {
 		body.classList.remove("open");
 	}
 });
+function headerHeight() {
+	const header = document.querySelector(".header");
+	if (window.scrollY >= 120 && window.innerWidth > 992) {
+		header.classList.add("scroll");
+	} else {
+		header.classList.remove("scroll");
+	}
+}
+window.addEventListener("scroll", headerHeight);
