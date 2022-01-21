@@ -232,12 +232,25 @@ body.open {
     z-index: 50;
     cursor: pointer;
   }
-  .header__burger.open path {
-    d: path("M25 25L15 15M35 15L25 25M25 25L25 25M25 25L15 35M35 35L25 25");
+  .header__burger.open .burger {
+    stroke: transparent;
+    stroke-width: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .header__burger.open .x {
+    stroke: black;
+    stroke-width: 5;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .header__burger path {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .header__burger .x {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
 }
 
@@ -1110,10 +1123,11 @@ body.open {
 
 .spoiler__item.active .spoiler__title span svg {
   top: 0;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
 
 .spoiler__item.active .spoiler__title span svg path {
-  d: path("M2 8.5L9 1.5L16 8.5");
   stroke: #fff;
 }
 
